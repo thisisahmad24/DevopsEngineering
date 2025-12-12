@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Static Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fafafa;
+            color: #333;
+        }
+
+        header {
+            background: #4a90e2;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 40px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #4a90e2;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3b78ba;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #eee;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Static Website</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <h2>Home</h2>
+        <p>This is a simple static website created using HTML, CSS, and JavaScript.</p>
+        <button onclick="showMessage()">Click Me</button>
+        <p id="message"></p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About</h2>
+        <p>This page demonstrates a basic layout for a static site.</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>You can reach me at <b>example@email.com</b>.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 My Static Website</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText = "Thanks for clicking the button!";
+        }
+    </script>
+
+</body>
+</html>
